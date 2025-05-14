@@ -1,13 +1,65 @@
-# Project repo
-This repo contains the code for an example simulation of the elution of a rectangular pulse using CADET-Process and CADET-RDM. A linear binding model is used and the influence of dispersion on the elution behavior is examined. This example is a reproduction of part of the case study from "Analytical solutions and moment analysis of general rate model for linear liquid chromatography". (Shamsul Qamar, Javeria Nawaz Abbasi, Shumaila Javeed, Andreas Seidel-Morgenstern, Chemical Engineering Science 2014;107:192-205. doi:10.1016/j.ces.2013.12.019.). [**url**: here](https://doi.org/10.1016/j.ces.2013.12.019) 
-also used in the study "Chromatography Analysis and Design Toolkit (CADET)" (Samuel Leweke, Eric von Lieres, Computers & Chemical Engineering 2018;113:274-294. doi:10.1016/j.compchemeng.2018.02.025.)  [**url**: here](https://doi.org/10.1016/j.compchemeng.2018.02.025) <br> 
+# Rectangular Pulse Elution Simulation with CADET
 
-Authors: Katharina Paul, Ronald Jäpel
+This repository contains an example simulation of the elution of a rectangular pulse using **CADET-Process** and **CADET-RDM**. A **linear binding model** is used to examine the influence of **dispersion** on the elution behavior.
 
-To run this case study use an environment that contains at least all of the packages given in the environment.yml <br>
-After cloning this repo, run `main.py` in a terminal. The results will be stored in the `src` folder inside of the `output` folder. 
+This example reproduces part of the case study from:
 
+* *"Analytical solutions and moment analysis of general rate model for linear liquid chromatography"*
+  Shamsul Qamar, Javeria Nawaz Abbasi, Shumaila Javeed, Andreas Seidel-Morgenstern
+  *Chemical Engineering Science* (2014); 107:192–205
+  [https://doi.org/10.1016/j.ces.2013.12.019](https://doi.org/10.1016/j.ces.2013.12.019)
 
+It is also referenced in:
 
-The output repository can be found at:
-[output_repo](https://github.com/cadet/RDM-Example-Rectangular-Pulse-Output)
+* *"Chromatography Analysis and Design Toolkit (CADET)"*
+  Samuel Leweke, Eric von Lieres
+  *Computers & Chemical Engineering* (2018); 113:274–294
+  [https://doi.org/10.1016/j.compchemeng.2018.02.025](https://doi.org/10.1016/j.compchemeng.2018.02.025)
+
+---
+
+## Authors
+
+* Katharina Paul
+* Ronald Jäpel
+* Hannah Lanzrath
+
+---
+
+## Running the Example Simulation
+
+1. Clone this repository.
+2. Set up the environment using the `environment.yml` file.
+3. Run the simulation:
+
+   ```bash
+   python main.py
+   ```
+
+The results will be stored in the `src` folder inside the `output` directory.
+
+> **Note**: Running `cadet-rdm` requires [**Git LFS**](https://git-lfs.com/), which needs to be installed separately.
+>
+> * **Ubuntu/Debian**:
+>
+>   ```bash
+>   sudo apt-get install git-lfs
+>   git lfs install
+>   ```
+>
+> * **macOS** (with Homebrew):
+>
+>   ```bash
+>   brew install git-lfs
+>   git lfs install
+>   ```
+>
+> * **Windows**:
+>   Download and install from [https://git-lfs.com](https://git-lfs.com)
+
+---
+
+## Output Repository
+
+The output data for this case study can be found here:
+[https://github.com/cadet/RDM-Example-Rectangular-Pulse-Output](https://github.com/cadet/RDM-Example-Rectangular-Pulse-Output)
