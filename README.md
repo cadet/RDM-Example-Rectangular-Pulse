@@ -1,6 +1,6 @@
 # Rectangular Pulse Elution Simulation with CADET
 
-This repository contains an example simulation of the elution of a rectangular pulse using **CADET-Process** and **CADET-RDM**. A **linear binding model** is used to examine the influence of **dispersion** on the elution behavior.
+This repository contains an example simulation of the elution of a rectangular pulse using **CADET-Process** and **CADET-RDM**. Here, a **General Rate Model (GRM)** with a **linear binding model** is used to examine the influence of **dispersion** on the elution behavior.
 
 This example reproduces part of the case study from:
 
