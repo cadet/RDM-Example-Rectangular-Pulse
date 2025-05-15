@@ -18,14 +18,26 @@
 # # Effects of the Peclet number on the elution of a rectangular pulse 
 
 # %% [markdown]
-# The following example is a reproduction of part of the research results published in "Analytical solutions and moment analysis of general rate model for linear liquid chromatography" (Shamsul Qamar, Javeria Nawaz Abbasi, Shumaila Javeed, Andreas Seidel-Morgenstern, Chemical Engineering Science 2014;107:192-205. doi:10.1016/j.ces.2013.12.019.). [**url**: here](https://doi.org/10.1016/j.ces.2013.12.019) <br> Their study of the General Rate Model for linear liquid chromatography was later used as a model problem by Leweke et al. for determining convergence benchmarks in CADET (_Chromatography Analysis and Design Toolkit (CADET)_, Samuel Leweke, Eric von Lieres, Computers & Chemical Engineering 2018;113:274-294. doi:10.1016/j.compchemeng.2018.02.025.)  [**url**: here](https://doi.org/10.1016/j.compchemeng.2018.02.025)
-# <br>
+# This case study is a reproduction of parts of the results published in:
+# <br><br>
+#**Qamar et al. (2014)**:  
+#*Analytical solutions and moment analysis of general rate model for linear liquid chromatography*,  
+#*Chemical Engineering Science*, 107, 192–205.  
+#[https://doi.org/10.1016/j.ces.2013.12.019](https://doi.org/10.1016/j.ces.2013.12.019)
+# <br><br>
+#This work on the General Rate Model (GRM) for linear liquid chromatography presented in that work was later adopted as a model problem to determine convergence benchmarks by:
+# <br><br>
+#**Leweke et al. (2018)**:  
+#*Chromatography Analysis and Design Toolkit (CADET)*,  
+#*Computers & Chemical Engineering*, 113, 274–294.  
+#[https://doi.org/10.1016/j.compchemeng.2018.02.025](https://doi.org/10.1016/j.compchemeng.2018.02.025)
+# <br><br>
 #
 
 # %% [markdown]
-# In the given example, a tracer is introduced into the column as a rectangular pulse. The binding behavior follows the Linear binding model. The unit operation model for this process is the General Rate Model. In their study, Qamar at al. examined the influence of dispersion on the elution behavior by analysing the effects of different Peclet numbers (Fig.5). The Peclet number `Pe` is a value discribing the ratio of convection to dispersion for particle flow in a column. 
+# In the given example, a tracer is introduced into the column as a rectangular pulse. The binding behavior follows the Linear binding model. The unit operation model for this process is the General Rate Model. In their study, Qamar et al. examined the influence of dispersion on the elution behavior by analysing the effects of different Peclet numbers (Fig.5). The Peclet number `Pe` is a value discribing the ratio of convection to dispersion for particle flow in a column. 
 #
-# In the following example, the elution is simulated for the numerical values from Table 2 (Leweke et al.). The interstitial velocity used here is u = 0.3 cm / min. Following this, the effects of different Peclet numbers are examined by simulating elutions for six different values.  
+# Here, the elution is simulated for the numerical values from Table 2 (Leweke et al.). The interstitial velocity used here is u = 0.3 cm / min. Following this, the effects of different Peclet numbers are examined by simulating elutions for six different values.  
 # The `flow_rate` can be calculated as the product of the interstitial cross section area and the interstitial velocity u. 
 
 # %%
