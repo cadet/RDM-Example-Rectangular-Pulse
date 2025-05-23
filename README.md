@@ -62,4 +62,4 @@ The results will be stored in the `src` folder inside the `output` directory.
 ## Output Repository
 
 The output data for this case study can be found here:
-[https://github.com/cadet/RDM-Example-Rectangular-Pulse-Output](https://github.com/cadet/RDM-Example-Rectangular-Pulse-Output)
+[Link to Output Repository](https://github.com/cadet/RDM-Example-Rectangular-Pulse-Output)
