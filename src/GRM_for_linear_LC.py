@@ -118,7 +118,10 @@ if __name__ == '__main__':
 # The Peclet number is given by the product of the column length and the interstiatial velocity devided by the dispersion. The `peclet_number` of the column used by Qamar et al. and shown in the plot above is around 255. 
 
 # %%
-peclet_number = (column.length * (0.3 * (1e-2 / 60))) / column.axial_dispersion
+column.axial_dispersion
+
+# %%
+peclet_number = (column.length * (0.3 * (1e-2 / 60))) / column.axial_dispersion[0]
 peclet_number
 
 # %% [markdown]
@@ -143,3 +146,5 @@ if __name__ == '__main__':
         axes[i].set_title(f"Peclet number: {peclet_number}")
 
     plt.tight_layout()
+
+# %%
