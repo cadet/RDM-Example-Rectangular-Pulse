@@ -6,7 +6,7 @@
 #       extension: .py
 #       format_name: percent
 #       format_version: '1.3'
-#       jupytext_version: 1.16.7
+#       jupytext_version: 1.17.2
 #   kernelspec:
 #     display_name: Python 3 (ipykernel)
 #     language: python
@@ -20,17 +20,17 @@
 # %% [markdown]
 # This case study is a reproduction of parts of the results published in:
 # <br><br>
-#**Qamar et al. (2014)**:  
-#*Analytical solutions and moment analysis of general rate model for linear liquid chromatography*,  
-#*Chemical Engineering Science*, 107, 192–205.  
-#[https://doi.org/10.1016/j.ces.2013.12.019](https://doi.org/10.1016/j.ces.2013.12.019)
+# **Qamar et al. (2014)**:  
+# *Analytical solutions and moment analysis of general rate model for linear liquid chromatography*,  
+# *Chemical Engineering Science*, 107, 192–205.  
+# [https://doi.org/10.1016/j.ces.2013.12.019](https://doi.org/10.1016/j.ces.2013.12.019)
 # <br><br>
-#This work on the General Rate Model (GRM) for linear liquid chromatography presented in that work was later adopted as a model problem to determine convergence benchmarks by:
+# This work on the General Rate Model (GRM) for linear liquid chromatography presented in that work was later adopted as a model problem to determine convergence benchmarks by:
 # <br><br>
-#**Leweke et al. (2018)**:  
-#*Chromatography Analysis and Design Toolkit (CADET)*,  
-#*Computers & Chemical Engineering*, 113, 274–294.  
-#[https://doi.org/10.1016/j.compchemeng.2018.02.025](https://doi.org/10.1016/j.compchemeng.2018.02.025)
+# **Leweke et al. (2018)**:  
+# *Chromatography Analysis and Design Toolkit (CADET)*,  
+# *Computers & Chemical Engineering*, 113, 274–294.  
+# [https://doi.org/10.1016/j.compchemeng.2018.02.025](https://doi.org/10.1016/j.compchemeng.2018.02.025)
 # <br><br>
 #
 
