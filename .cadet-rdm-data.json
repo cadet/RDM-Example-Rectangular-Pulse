@@ -5,7 +5,7 @@
   "output_uuid": "bdec901c-e665-4b27-a23b-8b9b243f9760",
   "cadet_rdm_version": "0.1.8",
   "output_remotes": {
-    "output_folder_name": "output",
+    "output_directory_name": "output",
     "output_remotes": {
       "origin": "git@github.com:cadet/RDM-Example-Rectangular-Pulse-Output.git"
     }
