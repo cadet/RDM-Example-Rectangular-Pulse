@@ -35,7 +35,7 @@
 #
 
 # %% [markdown]
-# In the given example, a tracer is introduced into the column as a rectangular pulse. The binding behavior follows the Linear binding model. The unit operation model for this process is the General Rate Model. In their study, Qamar et al. examined the influence of dispersion on the elution behavior by analysing the effects of different Peclet numbers (Fig.5). The Peclet number `Pe` is a value discribing the ratio of convection to dispersion for particle flow in a column. 
+# In the given example, a tracer is introduced into the column as a **rectangular pulse**. The binding behavior follows the Linear binding model. The unit operation model for this process is the **General Rate Model**. In their study, Qamar et al. examined the influence of dispersion on the elution behavior by analysing the effects of different Peclet numbers (Fig.5). The **Peclet number `Pe`** is a value discribing the **ratio of convection to dispersion** for particle flow in a column. 
 #
 # Here, the elution is simulated for the numerical values from Table 2 (Leweke et al.). The interstitial velocity used here is u = 0.3 cm / min. Following this, the effects of different Peclet numbers are examined by simulating elutions for six different values.  
 # The `flow_rate` can be calculated as the product of the interstitial cross section area and the interstitial velocity u. 
@@ -125,8 +125,8 @@ peclet_number = (column.length * (0.3 * (1e-2 / 60))) / column.axial_dispersion[
 peclet_number
 
 # %% [markdown]
-# The effects of different Peclet numbers on the elution curve can be examined by varying the dispersion rates within the column. The results show an approaching of the elution profile to a rectangular output as the dispersion is reduced and the Peclet number increases. The greater influence of advective transport in high Peclet numbers results in an elution that is more similar to the concentration profile at the inlet. Throughout the column the velocities of the particles within the mobile phase differ less with increasing Peclet numbers. The elution approaches the behavior of an ideal plug flow reactor. 
-# Smaller Peclet numbers indicate a greater influence of dispersion. This results in a more gradual elution with larger retention times as the differences between particle velocities in the mobile phase increase. The resulting elution profile approaches the behavior of a CSTR.
+# The effects of different Peclet numbers on the elution curve can be examined by varying the dispersion rates within the column. The results show an approaching of the elution profile to a **rectangular output** as the **dispersion is reduced** and the **Peclet number increases**. The greater influence of **advective transport** in high Peclet numbers results in an elution that is more similar to the concentration profile at the inlet. Throughout the column the velocities of the particles within the mobile phase differ less with increasing Peclet numbers. The elution approaches the behavior of an **ideal plug flow reactor**. <br>
+# Smaller Peclet numbers indicate a greater influence of dispersion. This results in a more gradual elution with larger retention times as the differences between particle velocities in the mobile phase increase. The resulting elution profile approaches the behavior of a **CSTR**.
 #
 
 # %%
@@ -146,5 +146,3 @@ if __name__ == '__main__':
         axes[i].set_title(f"Peclet number: {peclet_number}")
 
     plt.tight_layout()
-
-# %%
