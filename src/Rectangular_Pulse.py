@@ -35,17 +35,10 @@
 #
 
 # %% [markdown]
-<<<<<<< HEAD
 # In the given example, a tracer is introduced into the column as a **rectangular pulse**. The binding behavior follows the **Linear binding model**. The unit operation model for this process is the **General Rate Model**. In their study, Qamar et al. examined the influence of dispersion on the elution behavior by analysing the effects of different Peclet numbers [(Fig.5, Qamar et al.)](https://www.sciencedirect.com/science/article/pii/S0009250913008142?via%3Dihub#f0025). The **Peclet number `Pe`** is a value discribing the **ratio of convection to dispersion** for particle flow in a column. 
 
 # %% [markdown]
 # ## Setup
-=======
-# In the given example, a tracer is introduced into the column as a **rectangular pulse**. The binding behavior follows the Linear binding model. The unit operation model for this process is the **General Rate Model**. In their study, Qamar et al. examined the influence of dispersion on the elution behavior by analysing the effects of different Peclet numbers (Fig.5). The **Peclet number `Pe`** is a value discribing the **ratio of convection to dispersion** for particle flow in a column. 
-#
-# Here, the elution is simulated for the numerical values from Table 2 (Leweke et al.). The interstitial velocity used here is u = 0.3 cm / min. Following this, the effects of different Peclet numbers are examined by simulating elutions for six different values.  
-# The `flow_rate` can be calculated as the product of the interstitial cross section area and the interstitial velocity u. 
->>>>>>> b00849fea3dd92b291cc8f4c06d107ec1ac0acd5
 
 # %%
 import numpy as np
@@ -75,7 +68,7 @@ binding_model.desorption_rate = [1.0]  # k_d [1 / s]
 # ### Unit Operations
 
 # %% [markdown]
-# The elution is simulated for the numerical values from [Table 2, Leweke et al.](https://www.sciencedirect.com/science/article/pii/S0098135418300966?via%3Dihub#tbl0002). The interstitial velocity used here is u = 0.3 cm / min. Following this, the effects of different Peclet numbers are examined by simulating elutions for six different values.  
+# The elution is simulated for the numerical values from [Table 2, Leweke et al.](https://www.sciencedirect.com/science/article/pii/S0098135418300966?via%3Dihub#tbl0002). The interstitial velocity used here is u = 0.3 cm / min.
 # The `flow_rate` can be calculated as the product of the interstitial cross section area and the interstitial velocity u. 
 
 # %%
@@ -131,7 +124,7 @@ process.add_event('pulse_stop', 'flow_sheet.inlet.c',  c_initial, pulse_duration
 # ## Results
 
 # %% [markdown]
-# The Peclet number is given by the product of the column length and the interstiatial velocity devided by the dispersion [(5.2 Effect of boundary conditions, Eq. 41)](https://www.sciencedirect.com/science/article/pii/S0009250913008142?via%3Dihub#s0035). The `peclet_number` of the column used by Qamar et al. and depicted in the following plot above is around 255. 
+# The Peclet number is given by the product of the column length and the interstiatial velocity devided by the dispersion [(5.2 Effect of boundary conditions, Eq. 41)](https://www.sciencedirect.com/science/article/pii/S0009250913008142?via%3Dihub#s0035). The `peclet_number` of the column is around 255. 
 
 # %%
 if __name__ == '__main__':
@@ -146,14 +139,10 @@ peclet_number = (column.length * (0.3 * (1e-2 / 60))) / column.axial_dispersion[
 peclet_number
 
 # %% [markdown]
-<<<<<<< HEAD
 # ## Effect of different Peclet numbers
 
 # %% [markdown]
 # The effects of different Peclet numbers on the elution curve can be examined by varying the dispersion rates within the column. The following example simulates the elution of the rectangular pulse using six different peclet numbers. The results show an approaching of the elution profile to a **rectangular output** as the **dispersion is reduced** and the **Peclet number increases** [(Fig. 5, Qamar et al.)](https://www.sciencedirect.com/science/article/pii/S0009250913008142?via%3Dihub#f0025). <br>  The greater influence of **advective transport** in high Peclet numbers results in an elution that is more similar to the concentration profile at the inlet. Throughout the column the velocities of the particles within the mobile phase differ less with increasing Peclet numbers. The elution approaches the behavior of an **ideal plug flow reactor**. <br>
-=======
-# The effects of different Peclet numbers on the elution curve can be examined by varying the dispersion rates within the column. The results show an approaching of the elution profile to a **rectangular output** as the **dispersion is reduced** and the **Peclet number increases**. The greater influence of **advective transport** in high Peclet numbers results in an elution that is more similar to the concentration profile at the inlet. Throughout the column the velocities of the particles within the mobile phase differ less with increasing Peclet numbers. The elution approaches the behavior of an **ideal plug flow reactor**. <br>
->>>>>>> b00849fea3dd92b291cc8f4c06d107ec1ac0acd5
 # Smaller Peclet numbers indicate a greater influence of dispersion. This results in a more gradual elution with larger retention times as the differences between particle velocities in the mobile phase increase. The resulting elution profile approaches the behavior of a **CSTR**.
 #
 
@@ -173,9 +162,5 @@ if __name__ == '__main__':
         simulation_results.solution.column.outlet.plot(ax = axes[i])
         axes[i].set_title(f"Peclet number: {peclet_number}")
 
-<<<<<<< HEAD
     plt.tight_layout()
     plt.show()
-=======
-    plt.tight_layout()
->>>>>>> b00849fea3dd92b291cc8f4c06d107ec1ac0acd5
