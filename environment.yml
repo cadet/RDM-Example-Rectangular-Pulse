@@ -1,12 +1,12 @@
-name: rdm_example
+name: rdm_example_conda
 channels:
   - conda-forge
 dependencies:
   - python=3.11
-  - cadet
+  - cadet=5.1.2
   - pip
   - jupyterlab-myst
   - jupyterlab
   - pip:
-      - cadet-process[docs]
-      - cadet-rdm[jupyter]
+      - cadet-process[docs]==0.12.0
+      - cadet-rdm[jupyter]==1.1.2
